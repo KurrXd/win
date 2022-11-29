@@ -107,5 +107,14 @@ wget https://nixpoin.com/ChromeSetup.exe
 cp -f /tmp/net.bat net.bat
 cp -f /tmp/dpart.bat dpart.bat
 
-sleep 3
+
+██████╗░░█████╗░███╗░░██╗███████╗
+██╔══██╗██╔══██╗████╗░██║██╔════╝
+██║░░██║██║░░██║██╔██╗██║█████╗░░
+██║░░██║██║░░██║██║╚████║██╔══╝░░
+██████╔╝╚█████╔╝██║░╚███║███████╗
+╚═════╝░░╚════╝░╚═╝░░╚══╝╚══════╝
+echo "Vps Akan Otomatis Dimatikan dalam Waktu 5 detik"
+
+sleep 5
 poweroff
