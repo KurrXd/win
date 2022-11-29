@@ -1,14 +1,23 @@
 #!/bin/bash
-echo "SCRIPT AUTO INSTALL WINDOWS"
+echo "
+╭━━━╮╱╱╱╱╱╱╱╱╱╱╭╮╭╮╭╮╱╱╱╱╱╭╮╱╱╱╱╱╱╱╱╱╱╱╭━━━┳━━━╮
+┃╭━╮┃╱╱╱╱╱╱╱╱╱╱┃┃┃┃┃┃╱╱╱╱╱┃┃╱╱╱╱╱╱╱╱╱╱╱┃╭━╮┃╭━╮┃
+┃╰━╯┣╮╱╭┳━━┳━╮╱┃┃┃┃┃┣┳━╮╭━╯┣━━┳╮╭╮╭┳━━╮┃┃╱┃┃╰━━╮
+┃╭╮╭┫┃╱┃┃╭╮┃╭╮╮┃╰╯╰╯┣┫╭╮┫╭╮┃╭╮┃╰╯╰╯┃━━┫┃┃╱┃┣━━╮┃
+┃┃┃╰┫╰━╯┃╭╮┃┃┃┃╰╮╭╮╭┫┃┃┃┃╰╯┃╰╯┣╮╭╮╭╋━━┃┃╰━╯┃╰━╯┃
+╰╯╰━┻━╮╭┻╯╰┻╯╰╯╱╰╯╰╯╰┻╯╰┻━━┻━━╯╰╯╰╯╰━━╯╰━━━┻━━━╯
+╱╱╱╱╭━╯┃
+╱╱╱╱╰━━╯
+SCRIPT AUTO INSTALL WINDOWS by Ryan"
 echo
 echo "Pilih OS yang ingin anda install"
 echo "[1] Windows 2019(Default)"
 echo "[2] Windows 2016"
 echo "[3] Windows 2012"
 echo "[4) Windows 10"
-echo "[5] Pakai link gz mu sendiri"
+echo "[5] Chat Ryan Untuk Add OS lain"
 
-read -p "Pilih [1]: " PILIHOS
+read -p "Pilih [1]: " PILIH OS
 
 case "$PILIHOS" in
 	1|"") PILIHOS="https://file.nixpoin.com/windows2019DO.gz";;
@@ -20,7 +29,7 @@ case "$PILIHOS" in
 esac
 
 echo "[*] Password yang saya buat sudah masuk wordlist bruteforce, silahkan masukkan password yang lebih aman!"
-read -p "[?] Masukkan password untuk akun Administrator (minimal 12 karakter) : " PASSADMIN
+read -p "[?] Masukkan password untuk akun Administrator Rdp anda(minimal 12 karakter) : " PASSADMIN
 
 IP4=$(curl -4 -s icanhazip.com)
 GW=$(ip route | awk '/default/ { print $3 }')
@@ -50,7 +59,7 @@ EOF
 
 cat >/tmp/dpart.bat<<EOF
 @ECHO OFF
-echo JENDELA INI JANGAN DITUTUP
+echo Ryan Store
 echo JENDELA INI JANGAN DITUTUP
 echo SCRIPT INI AKAN MERUBAH PORT RDP MENJADI 5000, UNTUK MENYAMBUNG KE RDP GUNAKAN ALAMAT $IP4:5000
 echo KETIK YES LALU ENTER!
@@ -98,6 +107,5 @@ wget https://nixpoin.com/ChromeSetup.exe
 cp -f /tmp/net.bat net.bat
 cp -f /tmp/dpart.bat dpart.bat
 
-echo 'Your server will turning off in 3 second'
 sleep 3
 poweroff
