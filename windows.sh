@@ -113,7 +113,5 @@ cp -f /tmp/dpart.bat dpart.bat
 ██║░░██║██║░░██║██║╚████║██╔══╝░░
 ██████╔╝╚█████╔╝██║░╚███║███████╗
 ╚═════╝░░╚════╝░╚═╝░░╚══╝╚══════╝
-echo "Vps Akan Otomatis Dimatikan dalam Waktu 5 detik"
+echo "reboot Rdp dulu mazzeh baru bisa pake"
 
-sleep 5
-poweroff
