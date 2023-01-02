@@ -1,7 +1,7 @@
 #!/bin/bash
 echo ".  .         \  /  ."
 echo "|_/ . .._.._. ><  _|"
-echo "|  \(_|[  [  /  \(_]:
+echo "|  \(_|[  [  /  \(_]"
 echo
 echo "GITHUB : KurrXd"
 echo
