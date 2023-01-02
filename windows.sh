@@ -1,8 +1,4 @@
 #!/bin/bash
-echo ".  .         \  /  ."
-echo "|_/ . .._.._. ><  _|"
-echo "|  \(_|[  [  /  \(_]"
-echo
 echo "GITHUB : KurrXd"
 echo
 echo "Pilih OS yang ingin anda install"
